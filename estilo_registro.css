@@ -1,0 +1,196 @@
+/* Resetear algunos estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    padding: 20px; /* Un poco de espacio para que no quede pegado a los bordes */
+}
+
+/* Estilos del encabezado */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 58px;
+    background-color: transparent; /* Sin fondo */
+}
+
+.logo_registro {
+    display: flex;
+    align-items: center;
+}
+
+.logo_imagen_registro {
+    width: 180px; /* Tamaño del logo aumentado */
+    height: 88px;
+    margin-right: 15px;
+}
+
+.encabezado_derecha .iniciar_sesion {
+    background-color: #20c997;
+    color: white;
+    padding: 30px 65px; /* Aumentado el tamaño del botón */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px; /* Tamaño de fuente aumentado */
+}
+
+.encabezado_derecha .iniciar_sesion:hover {
+    background-color: #17a589;
+}
+
+/* Contenedor principal */
+.contenedor_principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    padding: 0 20px; /* Agrega espacio horizontal sin un fondo sólido */
+    background-color: transparent; /* Sin fondo */
+}
+
+/* Columna izquierda con recuadro dividido */
+.lado_izquierdo {
+    flex: 0 0 53%; /* Ajuste de ancho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuadro-imagen-texto {
+    width: 100%;
+    max-width: 750px;
+    border: 2px solid #ddd;
+    overflow: hidden;
+}
+
+.recuadro-imagen img {
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+/* Parte inferior con el texto */
+.mensaje_izquierda {
+    padding: 25px;
+    background-color: #fff;
+    text-align: left;
+    border-top: 1px solid #ddd;
+}
+
+.mensaje_izquierda h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mensaje_izquierda p {
+    font-size: 32px;
+    color: #666;
+}
+
+/* Columna derecha con formulario */
+.lado_derecho {
+    flex: 0 0 43%;
+    padding: 0 30px;
+}
+
+.lado_derecho h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.form-group select {
+    background-color: #fff;
+}
+
+/* Botón de registro */
+.register-button {
+    background-color: #4f46e5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 30px;
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.register-button:hover {
+    background-color: #3730a3;
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor_principal {
+        flex-direction: column;
+    }
+
+    .lado_izquierdo, .lado_derecho {
+        width: 100%;
+    }
+}
+
+/* Animación para los botones */
+.register-button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.register-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de entrada para el formulario */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lado_derecho {
+    animation: fadeIn 1s ease-in-out;
+}

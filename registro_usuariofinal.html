@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace para Font Awesome (para usar iconos como la campana) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <title>Registro de Cuenta</title>
+</head>
+<body>
+    <!-- Encabezado con logo y botón de inicio de sesión -->
+    <header class="encabezado">
+        <div class="logo_registro">
+            <img src="FaceFur.png" alt="Logo de FaceFur" class="logo_imagen_registro">
+        </div>
+        <div class="encabezado_derecha">
+            <a href="login.html" class="iniciar_sesion">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor_principal">
+        <!-- Lado izquierdo con imagen y texto -->
+        <div class="lado_izquierdo">
+            <div class="recuadro-imagen-texto">
+                <div class="recuadro-imagen">
+                    <img src="imagen_registro_mejorado.jpg" alt="Perros jugando" class="imagen_main">
+                </div>
+                <div class="mensaje_izquierda">
+                    <h1>Empieza a ayudar</h1>
+                    <p>Una red social para ayudar animales</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de registro a la derecha -->
+        <div class="lado_derecho">
+            <h2>Regístrate</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido_paterno">Apellido paterno</label>
+                    <input type="text" id="apellido_paterno" name="apellido_paterno" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido_materno">Apellido materno</label>
+                    <input type="text" id="apellido_materno" name="apellido_materno" required>
+                </div>
+                <div class="form-group">
+                    <label for="dni">Número de DNI</label>
+                    <input type="text" id="dni" name="dni" required>
+                </div>
+                <div class="form-group">
+                    <label for="distrito">Distrito</label>
+                    <select id="distrito" name="distrito" required>
+                        <option value="" disabled selected>Distrito</option>
+                        <option value="1">Distrito 1</option>
+                        <option value="2">Distrito 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico (Gmail)</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="register-button">Registrarme</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay para oscurecer el fondo -->
+    <div id="overlay"></div>
+
+    <!-- Modal de notificación -->
+    <div id="notificationModal">
+        <!-- Icono de campana -->
+        <i class="fas fa-bell"></i>
+
+        <!-- Botón para cerrar en la parte superior derecha -->
+        <span id="closeModal">&times;</span>
+
+        <h3>Registro Completado</h3>
+        <p>Su solicitud de registro ha sido enviada satisfactoriamente. 
+           Pronto recibirá un correo de aceptación indicándole los pasos a seguir para completar su registro.</p>
+        <button id="acceptBtn">Aceptar</button>
+    </div>
+
+    <!-- Archivo de JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

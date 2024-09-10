@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="recuperar_contrasena.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para el ícono de la campana -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezado con logo y botones de registro e iniciar sesión -->
+    <header class="encabezado">
+        <div class="logo_recuperar">
+            <img src="FaceFur.png" alt="Logo de FaceFur" class="logo_imagen_recuperar">
+        </div>
+        <div class="botones">
+            <a href="register.html" class="registrarme">Registrarme</a>
+            <a href="login.html" class="iniciar_sesion">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="contenedor_recuperar">
+        <!-- Imagen lado izquierdo -->
+        <div class="imagen_lado_izquierdo">
+            <img src="Recuperar_contraseña.jpg" alt="Imagen de recuperación">
+        </div>
+        <div class="formulario_recuperar">
+            <h2>Recupera tu contraseña</h2>
+            <p>¿Olvidaste tu contraseña?</p>
+            <p>Ingresa el correo electrónico con el que te registraste para iniciar con la recuperación de cuenta.</p>
+            <form id="recover-form"> <!-- ID actualizado a "recover-form" -->
+                <div class="form-group">
+                    <label for="email">Ingresa tu correo</label>
+                    <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <button type="submit" class="boton_aceptar">Aceptar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay para oscurecer el fondo -->
+    <div id="overlay"></div>
+
+    <!-- Modal de notificación -->
+    <div id="notificationModal">
+        <!-- Icono de campana -->
+        <i class="fas fa-bell"></i>
+
+        <!-- Botón para cerrar en la parte superior derecha -->
+        <span id="closeModal">&times;</span>
+
+        <h3>Su cuenta ha sido validada</h3>
+        <p>Pronto recibirá un correo indicándole los pasos a seguir para cambiar su contraseña.</p>
+        <button id="acceptBtn">Aceptar</button>
+    </div>
+
+    <!-- Archivo de JavaScript -->
+    <script src="recuperar_contrasena.js"></script>
+</body>
+</html>

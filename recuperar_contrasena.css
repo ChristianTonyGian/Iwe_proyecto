@@ -1,0 +1,206 @@
+/* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+/* Encabezado */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: transparent;
+    margin-bottom: 25px;
+}
+
+.logo_recuperar {
+    display: flex;
+    align-items: center;
+}
+
+.logo_imagen_recuperar {
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.botones a {
+    margin-left: 15px;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.registrarme {
+    background-color: #b3c2bf;
+}
+
+.iniciar_sesion {
+    background-color: #4f46e5;
+}
+
+.botones a:hover {
+    opacity: 0.9;
+}
+
+/* Contenedor principal */
+.contenedor_recuperar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen lado izquierdo */
+.imagen_lado_izquierdo img {
+    width: 600px;
+}
+
+/* Formulario lado derecho */
+.formulario_recuperar {
+    max-width: 600px;
+    padding: 0 10px;
+}
+
+.formulario_recuperar h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.formulario_recuperar p {
+    font-size: 30px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #4f46e5;
+    border-radius: 5px;
+}
+
+.boton_aceptar {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton_aceptar:hover {
+    background-color: #3730a3;
+}
+
+/* Fondo oscurecido cuando el modal está activo */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* Estilo del modal */
+#notificationModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 450px;
+    text-align: left;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+}
+
+/* Icono de campana en el modal */
+#notificationModal .fa-bell {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Botón de cierre */
+#closeModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Título del modal */
+#notificationModal h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Texto del modal */
+#notificationModal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    padding-left: 40px;
+}
+
+/* Botón de Aceptar */
+#acceptBtn {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+#acceptBtn:hover {
+    background-color: #3730a3;
+}

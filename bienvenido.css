@@ -1,0 +1,183 @@
+/* Resetear algunos estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4f6;
+    padding: 20px;
+}
+
+/* Encabezado con el logo */
+.encabezado {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo_imagen_registro {
+    width: 200px;
+    height: auto;
+}
+
+/* Contenedor principal */
+.contenedor_principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px auto;
+    max-width: 1400px;
+}
+
+/* Columna izquierda con imagen */
+.lado_izquierdo {
+    flex: 0 0 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuadro-imagen-texto {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.imagen_main {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+.mensaje_izquierda {
+    padding: 25px;
+    text-align: left;
+}
+
+.mensaje_izquierda h1 {
+    font-size: 42px; /* Aumentamos el tamaño del título */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.mensaje_izquierda p {
+    font-size: 22px;
+    color: #666;
+}
+
+/* Columna derecha con el formulario */
+.lado_derecho {
+    flex: 0 0 35%;
+    background-color: #fff;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.lado_derecho h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Contenedor para inputs con íconos */
+.input-container {
+    position: relative;
+}
+
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-size: 18px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 14px 14px 14px 40px; /* Añadimos espacio para el icono */
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.olvide_contrasena {
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 18px;
+    background-color: #4f46e5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3730a3;
+}
+
+.registro-texto {
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.registro-texto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Botones de registro adicionales */
+.registro-usuario, .registro-albergue {
+    width: 100%;
+    padding: 22px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre el icono y el texto */
+}
+
+/* Botón "Registrarse como usuario" sin fondo */
+.registro-usuario {
+    background-color: transparent; /* Sin fondo */
+    color: #333; /* Texto visible */
+    border: 2px solid #333; /* Borde visible */
+}
+
+.registro-albergue {
+    background-color: #b2e4dc; /* Fondo celeste claro */
+    color: #333;
+}
+
+.registro-usuario:hover {
+    background-color: #f3f4f6; /* Color de fondo sutil al pasar el ratón */
+}
+
+.registro-albergue:hover {
+    background-color: #a3d3cc;
+}
